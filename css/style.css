@@ -6,7 +6,11 @@
 
     /* Cor Principal*/
 
+
     /* Cores */
+    --cor-texto: #717171;
+    --cor-texto-escolhido: white;
+    --cor-detalhes: #b54bf2;
 
     /* Tipografia e fontes */
     --fonte-tipo: font-family: 'Montserrat', sans-serif;
@@ -23,6 +27,15 @@
     --fonte-peso-leve: 300;
     --fonte-peso-normal: 400;
     --fonte-peso-pesado: 600;
+
+        /* Margens */
+    --m-05p: 0.313rem;
+    --m-10p: 0.625rem;
+    --m-15p: 0.938rem;
+    --m-20p: 1.3rem;
+    --m-25p: 1.563rem;
+    --m-30p: 1.875rem;
+    --m-40p: 2.5rem;
     
     /* z index */
     --z-tooltip: 10;
@@ -42,6 +55,7 @@ html{
 body{
     font-family: var(--fonte-tipo);
     font-size: var(--fonte-tamanho-normal);
+    color: var(--cor-texto);
 }
 h1,h2,h3{
     font-weight: var(--fonte-peso-pesado);
@@ -61,7 +75,7 @@ img{
 
 /* layout */
 .section{
-    padding: 1.25 0;
+    padding: 1.3rem 0;
 }
 .section__title{
     font-size: var(--fonte-tamanho-h1);
@@ -73,9 +87,11 @@ img{
     font-size: var(--fonte-tamanho-h3);
 }
 .section__title,
-.section__subtitle{
+.section__subtitle,
+.section__last-title{
     text-align: center;
 }
+
 /* Reusaveis */
 .container{
     max-width: 1280px;
@@ -90,9 +106,42 @@ img{
     display: flex;
     flex-direction: row;
 }
+
     /* Navegacao */
 .navegacao{
     width: 20vw;
+    max-width: 300px;
     height: 100vh;
-    background-color: gray;
+    background-color: #2d3035;
+}
+.topo{
+    padding: var(--m-20p) 0;
+    background-color: #26282d;
+}
+.logo{
+    color: var(--cor-texto-escolhido);
+    font-weight: var(--fonte-peso-leve);
+    user-select: none;
+    text-transform: uppercase;
+}
+.nav__menu{
+    padding: var(--m-40p) 0;
+    text-align: center;
+    font-size: var(--fonte-tamanho-normal);
+}
+.menu__link{
+    color: var(--cor-texto);
+    text-transform: uppercase;
+    line-height: 1.125rem;
+    transition: ease-out .3s;
+}
+.menu__link:hover .nav__icone{
+    color: var(--cor-detalhes);
+}
+.menu__link:hover{
+    color: var(--cor-texto-escolhido);
+}
+.nav__icone{
+    font-size: 1.125rem;
+    margin-right: 10px;
 }
