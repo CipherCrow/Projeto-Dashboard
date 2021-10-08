@@ -1,10 +1,98 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* Variaveis */
+:root{
+
+    /* Cor Principal*/
+
+    /* Cores */
+
+    /* Tipografia e fontes */
+    --fonte-tipo: font-family: 'Montserrat', sans-serif;
+
+        /* tamanho */
+    --fonte-tamanho-h1: 1.5rem;
+    --fonte-tamanho-h2: 1.25rem;
+    --fonte-tamanho-h3: 1.125rem;
+    --fonte-tamanho-normal: 1rem;
+    --fonte-tamanho-pequeno: .8rem;
+    --fonte-tamanho-menor: .7rem;
+
+        /* peso */
+    --fonte-peso-leve: 300;
+    --fonte-peso-normal: 400;
+    --fonte-peso-pesado: 600;
+    
+    /* z index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/* Reset */
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--fonte-tipo);
+    font-size: var(--fonte-tamanho-normal);
+}
+h1,h2,h3{
+    font-weight: var(--fonte-peso-pesado);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos */
+
+/* layout */
+.section{
+    padding: 1.25 0;
+}
+.section__title{
+    font-size: var(--fonte-tamanho-h1);
+}
+.section__subtitle{
+    font-size: var(--fonte-tamanho-h2);
+}
+.section__last-title{
+    font-size: var(--fonte-tamanho-h3);
+}
+.section__title,
+.section__subtitle{
+    text-align: center;
+}
+/* Reusaveis */
 .container{
     max-width: 1280px;
     padding: 0 2%;
     margin: 0 auto;
+}
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+    /* Navegacao */
+.navegacao{
+    width: 20vw;
+    height: 100vh;
+    background-color: gray;
 }
