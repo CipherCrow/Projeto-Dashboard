@@ -111,17 +111,22 @@ img{
 }
 
     /* Navegacao */
+body.open-menu .navegacao{
+    left: 0;
+}
+body.open-menu .nav__toggle{
+    left: 17.800rem;
+}
 .navegacao{
     width: 20rem;
     /* max-width: 300px; */
     height: 100vh;
     background-color: #2d3035;
     position: fixed;
-    transition: ease-in-out .5s;
-    left: -17rem;
+    transition: ease-in-out .3s;
+    left: -17rem; /* -17rem */
     z-index: var(--z-fixed);
 }
-
 .topo{
     padding: var(--m-20p) 0;
     background-color: #26282d;
@@ -138,11 +143,12 @@ img{
 .nav__toggle{
     font-size: 1.5rem;
     position: fixed;
-    left: .825rem;/* 20. */
+    left: .825rem;/* 20. 17.650rem */
     /* bottom: 50%;
     transform: translateY(50%); */
     transition: ease-out .3s;
-    text-shadow: .1px .1px .1px rgba(100, 100, 100, 0.6);
+    text-shadow: 0px 0px 2px rgba(100, 100, 100, 0.7);
+    cursor: pointer;
 }
 .nav__toggle:hover{
     color: var(--cor-texto-escolhido);
@@ -151,6 +157,9 @@ img{
     padding: var(--m-40p) 0;
     text-align: center;
     font-size: var(--fonte-tamanho-normal);
+}
+.menu__lista{
+    gap: 2rem;
 }
 .menu__item.active .nav__icone{
     color: var(--cor-detalhes);
@@ -165,7 +174,7 @@ img{
     transition: ease-out .3s;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr; 
+    /* grid-template-columns: 1fr;  */
 }
 .menu__link:hover .nav__icone{
     color: var(--cor-detalhes);
@@ -180,12 +189,26 @@ img{
     /* 3rem */
 }
 
+/* main */
+.main{
+    width: calc(100vw - 3rem);
+    position: relative;
+    left: 3rem;
+    transition: ease-in-out .3s;
+    padding: var(--m-25p);
+}
+
 @media screen and (max-width:480px){
     .navegacao{
         left: -20rem;
     }
+    .main{
+        width: 100vw;
+        left: 0;        
+    }
 }
-@media screen and (min-width:769px){
+
+@media screen and (min-width:1024px){
     .navegacao{
         left: 0;
     }
@@ -195,10 +218,8 @@ img{
     .navegacao .nav__icone{
         right: 2.5rem;
     }
-}
-
-/* main */
-main{
-    /* max-width: 80vw; */
-    /* background-color: black; */
+    .main{
+        width: calc(100vw - 20rem);
+        left: 20rem;
+    }
 }
