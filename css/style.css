@@ -227,6 +227,7 @@ body.open-menu .nav__toggle{
 }
 .main__header p{
     align-self: center;
+    text-transform: uppercase;
 }
 .header__pesquisa{
     display: flex;
@@ -246,12 +247,26 @@ body.open-menu .nav__toggle{
 .header__icon__single:hover{
     color: var(--cor-texto-escolhido);
 }
-.main__header >.header__icon__single:last-of-type{
+.sino{
     color: var(--cor-warning);
+    position: relative;
 }
-.icon__pesquisa{
-       
+.sino::before{
+    content:"2";
+    display: block;
+    position: absolute;
+    right: -.2rem;
+    top: -.2rem;
+    width: 1rem;
+    height: 1rem;
+    font-size: var(--fonte-tamanho-menor);
+    line-height: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--cor-warning);
+    color: white;
 }
+
 #search__field{
     outline: none;
     border: 1px solid var(--cor-detalhes-escuro);
