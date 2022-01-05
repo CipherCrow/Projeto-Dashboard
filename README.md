@@ -1,5 +1,5 @@
 ##  Projeto de Dashboard!
-Projeto em desenvolvimento de um painel de controle para alguma aplicação fictícia. Estou criando para treinar mais o uso de Grids e das variaveis Javascript. Tambem planejo adicionar um Darkmode no final.
+Projeto em desenvolvimento de um painel de controle para alguma aplicação fictícia. Estou criando para treinar mais o uso de Grids e das variáveis Javascript. Também planejo adicionar um Darkmode no final.
 
 ## 💻 Tecnologias 
 Além dessas, Fontawesome para os ícones.
@@ -15,11 +15,11 @@ Além dessas, Fontawesome para os ícones.
 
 ## Ícones
 - :up: Atualização.
-- :bug: Correcão.
+- :bug: Correção.
 
 ## 📱 GitHub-Pages
 - [x] Responsividade
 - [ ] Finalizado
 - [ ] Ao Ar
 
->GitHub-Pages: Ainda não disponivel
+>GitHub-Pages: Ainda não disponível

@@ -11,6 +11,9 @@
     --cor-texto: #717171;
     --cor-texto-escolhido: white;
     --cor-detalhes: #b54bf2;
+    --cor-detalhes-escuro: #d6d6d6;
+    --cor-bordas: #ccc;
+    --cor-warning: rgb(248, 51, 51);
 
     /* Tipografia e fontes */
     --fonte-tipo: font-family: 'Montserrat', sans-serif;
@@ -119,7 +122,7 @@ body.open-menu .nav__toggle{
 }
 .navegacao{
     width: 20rem;
-    /* max-width: 300px; */
+    /* max-width: 320px; */
     height: 100vh;
     background-color: #2d3035;
     position: fixed;
@@ -167,6 +170,23 @@ body.open-menu .nav__toggle{
 .menu__item.active > .menu__link{
     color: var(--cor-texto-escolhido);
 }
+.menu__item:last-child{
+   grid-row: 12;
+   position: relative;
+}
+.menu__item:last-child::before{
+    content: "";
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 1px;
+    margin: auto;
+    top: -20px;
+    background-color: var(--cor-texto);
+}
+.menu__item:last-child .menu__link:hover .nav__icone{
+    color: var(--cor-warning);
+}
 .menu__link{
     color: var(--cor-texto);
     text-transform: uppercase;
@@ -174,7 +194,6 @@ body.open-menu .nav__toggle{
     transition: ease-out .3s;
     position: relative;
     display: grid;
-    /* grid-template-columns: 1fr;  */
 }
 .menu__link:hover .nav__icone{
     color: var(--cor-detalhes);
@@ -195,7 +214,52 @@ body.open-menu .nav__toggle{
     position: relative;
     left: 3rem;
     transition: ease-in-out .3s;
-    padding: var(--m-25p);
+    /* padding: var(--m-25p); */
+}
+
+/* header main */
+.main__header{
+    text-align: right;
+    grid-template-columns: 3fr 1fr 1fr;
+    line-height: var(--m-15p);
+    padding: var(--m-20p) var(--m-15p);
+    border-bottom: 2px solid var(--cor-bordas);
+}
+.main__header p{
+    align-self: center;
+}
+.header__pesquisa{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+}
+.header__icon__single{
+    background-color: var(--cor-detalhes-escuro);
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2px;
+    line-height: 2rem;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+.header__icon__single:hover{
+    color: var(--cor-texto-escolhido);
+}
+.main__header >.header__icon__single:last-of-type{
+    color: var(--cor-warning);
+}
+.icon__pesquisa{
+       
+}
+#search__field{
+    outline: none;
+    border: 1px solid var(--cor-detalhes-escuro);
+    height: 2rem;
+    line-height: 1.5rem;
+    font-size: var(--fonte-tamanho-normal);
+    padding-left: 1rem;
+    color: var(--cor-texto);
 }
 
 @media screen and (max-width:480px){
