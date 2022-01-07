@@ -101,6 +101,9 @@ img{
     color: var(--cor-texto-card);
     margin-top: var(--m-10p);
 }
+.section__button{
+
+}
 
 /* Reusaveis */
 .container{
@@ -288,11 +291,14 @@ body.open-menu .nav__toggle{
 .section-wraper{
     display: flex;
 }
+
+/* conteudo */
 .conteudo__list{
     width: 75%;
     padding: var(--m-15p);
     height: calc(100vh - 4.3rem);
     background-color: #FAF8FB;
+    overflow-y: auto;
 }
 .conteudo__item{
     background-color: white;
@@ -304,11 +310,71 @@ body.open-menu .nav__toggle{
     text-transform: uppercase;
     text-align: left;
 }
+
+/* Atualizacoes */
 .last-Updates{
     width: 25%;
     height: calc(100vh - 4.3rem);
-    background-color: blue;
+    background-color: #eaebeb;
+    padding: var(--m-20p);
+    overflow-y: auto;
 }
+.updates__topo{
+    border-bottom: 1px solid var(--cor-bordas);
+    margin-bottom: var(--m-20p);
+}
+.updates__topo h2{
+    font-size: var(--fonte-tamanho-normal);
+    text-transform: uppercase;
+}
+.updates__item{
+    padding-left: var(--m-20p);
+    /* border-left: 2px solid var(--cor-bordas); */
+    position: relative;
+}
+.updates__item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -8px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--cor-bordas);
+    border-radius: 50%;
+    background-color: var(--cor-bordas);
+}
+.updates__item::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -2px;
+    top: 0;
+    width: 2px;
+    height:130%;
+    background-color: var(--cor-bordas);    
+}
+.updates__item:last-of-type::after{
+    height: 100%;
+}
+.updates__item h3{
+    font-size: var(--fonte-tamanho-pequeno);
+    color: var(--cor-texto-card)
+}
+.updates__item h2{
+    font-size: var(--fonte-tamanho-normal);
+}
+.updates__item p{
+    color: var(--cor-texto-card);
+    font-size: var(--fonte-tamanho-pequeno);
+}
+span.updates__span-object{
+    text-decoration: underline;
+}
+span.updates__span-object,
+span.updates__span-user{
+    color: var(--cor-texto);
+}
+
 @media screen and (max-width:480px){
     .navegacao{
         left: -20rem;
