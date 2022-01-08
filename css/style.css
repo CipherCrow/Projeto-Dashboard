@@ -101,9 +101,6 @@ img{
     color: var(--cor-texto-card);
     margin-top: var(--m-10p);
 }
-.section__button{
-
-}
 
 /* Reusaveis */
 .container{
@@ -302,13 +299,75 @@ body.open-menu .nav__toggle{
 }
 .conteudo__item{
     background-color: white;
-    border: 1px solid var(--cor-bordas);
+    border: .5px solid var(--cor-bordas);
     box-shadow: 0 0 3px var(--cor-bordas);
     padding: var(--m-30p);
 }
 .conteudo__item h2{
     text-transform: uppercase;
     text-align: left;
+}
+
+/* opcoes */
+#conteudo__options{
+    margin-top: var(--m-10p);
+}
+#conteudo__options li{
+    display: inline-block;
+    margin: 10px 2px;
+}
+.conteudo__button{
+    padding: var(--m-05p);
+    text-transform: uppercase;
+    color: white;
+    border-radius: 15px;
+    background-color: var(--cor-detalhes-escuro);
+    font-size: var(--fonte-tamanho-pequeno);
+    font-weight: var(--fonte-peso-pesado);
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+.conteudo__button:hover{
+    background-color: var(--cor-texto);
+    opacity: .7;
+}
+
+/* suporte */
+.text__destaque{
+    color: var(--cor-texto);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+.text__destaque:hover{
+    opacity:.7;
+}
+.suporte-btn{
+    display: inline-block;
+    margin-top: var(--m-10p);
+}
+
+/* formulario */
+.conteudo__form{
+    padding-top: var(--m-10p);
+    gap: .5rem;
+}
+.conteudo__form textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+.conteudo__form__input{
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--cor-bordas);
+    padding: var(--m-05p);
+    color: var(--cor-texto);
+    font-weight: var(--fonte-peso-normal);
+}
+.conteudo__form-wraper{
+    padding-top: var(--m-10p);
+    display: inline-block;
+    text-align: center;
 }
 
 /* Atualizacoes */
@@ -373,6 +432,12 @@ span.updates__span-object{
 span.updates__span-object,
 span.updates__span-user{
     color: var(--cor-texto);
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+span.updates__span-object:hover,
+span.updates__span-user:hover{
+    opacity: .7;
 }
 
 @media screen and (max-width:480px){
