@@ -296,6 +296,7 @@ body.open-menu .nav__toggle{
     height: calc(100vh - 4.3rem);
     background-color: #FAF8FB;
     overflow-y: auto;
+    grid-template-columns: repeat(2,1fr);
 }
 .conteudo__item{
     background-color: white;
@@ -308,7 +309,15 @@ body.open-menu .nav__toggle{
     text-align: left;
 }
 
+/* bem-vindo */
+#conteudo__bem-vindo{
+    grid-column: 1/3 ;
+}
+
 /* opcoes */
+#conteudo__opcoes{
+    grid-column: 1/3;
+}
 #conteudo__options{
     margin-top: var(--m-10p);
 }
@@ -332,22 +341,10 @@ body.open-menu .nav__toggle{
     opacity: .7;
 }
 
-/* suporte */
-.text__destaque{
-    color: var(--cor-texto);
-    text-decoration: underline;
-    cursor: pointer;
-    transition: ease-in-out .3s;
-}
-.text__destaque:hover{
-    opacity:.7;
-}
-.suporte-btn{
-    display: inline-block;
-    margin-top: var(--m-10p);
-}
-
 /* formulario */
+#conteudo__anotacao{
+    grid-row: span 2;
+}
 .conteudo__form{
     padding-top: var(--m-10p);
     gap: .5rem;
@@ -368,6 +365,24 @@ body.open-menu .nav__toggle{
     padding-top: var(--m-10p);
     display: inline-block;
     text-align: center;
+}
+
+/* suporte */
+#conteudo__ticket{
+    text-align: center;
+}
+.text__destaque{
+    color: var(--cor-texto);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+.text__destaque:hover{
+    opacity:.7;
+}
+.suporte-btn{
+    display: inline-block;
+    margin-top: var(--m-10p);
 }
 
 /* Atualizacoes */
