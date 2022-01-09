@@ -1,5 +1,5 @@
 ##  Projeto de Dashboard!
-Projeto em desenvolvimento de um painel de controle para alguma aplicação fictícia. Estou criando para treinar mais o uso de Grids e das variáveis Javascript. Também planejo adicionar um Darkmode no final.
+Projeto em desenvolvimento de um painel de controle para alguma aplicação fictícia. Estou criando para treinar mais o uso de Grids e das variáveis Javascript. 
 
 ## 💻 Tecnologias 
 Além dessas, Fontawesome para os ícones.
@@ -19,7 +19,7 @@ Além dessas, Fontawesome para os ícones.
 
 ## 📱 GitHub-Pages
 - [x] Responsividade
-- [ ] Finalizado
-- [ ] Ao Ar
+- [X] Finalizado
+- [X] Ao Ar
 
->GitHub-Pages: Ainda não disponível
+>GitHub-Pages: https://ciphercrow.github.io/Projeto-Dashboard/
