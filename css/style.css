@@ -379,8 +379,8 @@ body.open-menu .nav__toggle{
 }
 
 /* suporte */
-#conteudo__ticket{
-    text-align: center;
+#conteudo__ticket .section__text{
+    margin-bottom: var(--m-10p);
 }
 .text__destaque{
     color: var(--cor-texto);
@@ -393,7 +393,7 @@ body.open-menu .nav__toggle{
 }
 .suporte-btn{
     display: inline-block;
-    margin-top: var(--m-10p);
+    margin: 0 auto;
 }
 
 /* Atualizacoes */
@@ -472,6 +472,7 @@ span.updates__span-user:hover{
     }
     .conteudo__list{
         width: 100%;
+        padding-bottom: 1.5rem;
     }
     .conteudo__item{
         padding: var(--m-10p);
